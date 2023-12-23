@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Wellcome to dynamic page</h1>
+    {{!-- pass the value dynamically --}}
+        <h2>{{key.name}}</h2>
+        <h2>{{key.framework}}</h2>
+
+    {{!-- handlebar inbuilt helper function --}}
+    {{!-- {{#if subject }}        
+        <h1>go to <a href="/about">About page</a> </h1>
+    {{/if}} --}}
+
+    {{#checkAge age }}
+        <h1>go to <a href="/about">About page</a> </h1>
+        {{else}}
+        <h1>you are below 18</h1>
+        
+    {{/checkAge}}
+</body>
+</html>

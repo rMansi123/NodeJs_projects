@@ -1,0 +1,61 @@
+express.Router() : express.Router() function which is used to create a new router object.
+This function is used when you want to create a new router object.
+
+Syntax : express.Router()
+
+Router Instance is a middleware
+
+---- Commonjs module system and ES6 module system:
+Node.js's original module system is commonJs (which uses require and module.exports).
+
+ECMAScript module system (Which uses import and export) has become standard and Node.js has added support for it.
+
+Node.js will treat .cjs files as commonJS modules and .mjs files ad ECMAScript modules. it will treat.js files as whatever the default module system for the priject  is (which us commonJS unless package.json says "type":"module")
+
+---- Template engine :
+Template engine helps to create an html templet with minimal code, Also, it can inject data into an html templet.
+At runtime, the templet engine replace variables in a templet file with actual values, and transforms the templet into an html file sent to the client
+
+* populare template engines:
+EJS : embedded js templet (EJS) use for lightweight solution, creating HtML markup with simple js code.
+
+Handlebars : Improves developer's productivity. Improves readability and maintainability (HBS)
+
+Mustache : Mustache is a logic-less templating engine, it can be literally used for any kind of development work
+
+Pug : pug is 2x slower than Handlebars, EJS ann Underscore.
+
+----- Handlebars
+Handlebars : Handlebars.js is a templating engine similar to the ejs module in node.js but more powerful and simple to use.
+
+It ensures minimum templating and is a logicless engine that keeps the view and the code separated. It can be used with express as the hbs module
+
+#npm i hbs 
+
+#app.set('view engine','hbs') : set hbs as default template engine
+
+#app.set('views',<pathname>) : set view path
+
+
+--------- Static files in Express
+static files such as images, css files, and JavaScript files, use the express.static built-in middleware function in Express
+
+express.static(root, [option])
+app.use(express.static('public'))
+
+
+---- Handlebars allows for template reuse through partials.
+partials are normal handlebars templates that may be called directly by other templates.
+
+
+
+-------------Mongo DB -------------
+Mongo Db is a no sql database.
+Mongo db is a scalable, open source, high performance, document orianted database.
+
+data store in collections format
+E.g {
+    name: "mansi",
+    subject: "Node",
+}
+Horizontal scalable
